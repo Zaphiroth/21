@@ -1,11 +1,12 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 # ProjectName:  21
-# Purpose:      Preparing
+# Purpose:      Preparation
 # programmer:   Zhe Liu
 # Date:         2022-04-08
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 
+##---- setup environment variables ----
 options(java.parameters = "-Xmx2048m",
         stringsAsFactors = FALSE, 
         encoding = 'UTF-8')
