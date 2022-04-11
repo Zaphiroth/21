@@ -24,36 +24,30 @@ t.check <- test.data.3 %>%
 ## Mobile
 test.data.4 <- read.csv('02_Inputs/China_Mobile/events.csv', header = TRUE)
 
-## Big 5
-test.data.5 <- read.delim2('02_Inputs/Big5/data-final.csv')
+## OSRI
+osri.raw <- read.delim2('02_Inputs/1.Personality/OSRI/data.csv')
 
-test.cleaned <- test.data.5 %>% 
+colSums(is.na(osri.raw))
+
+osri.cleaned <- osri.raw %>% 
+  filter_at(vars(starts_with('Q')), all_vars(. != 0))
+
+## Big 5
+big5.raw <- read.delim2('02_Inputs/1.Personality/Big5/data-final.csv')
+
+big5.cleaned <- big5.raw %>% 
   select(-ends_with('_E')) %>% 
-  select(ends_with(as.character(0:9))) %>% 
+  select(ends_with(as.character(0:9)), country) %>% 
   filter(EXT1 != 'NULL') %>% 
-  mutate_all(as.numeric) %>% 
-  mutate_all()
-  mutate_all(function(x) {
-    if (x == 0) {
-      NaN
-    } else {
-      x - 3
-    }
-  }) %>% 
+  filter_all(all_vars(. !=0)) %>% 
+  mutate_at(vars(ends_with(as.character(0:9))), as.numeric) %>% 
+  arrange(country) %>% 
   mutate(ID = row_number())
 
-for (i in 0:5) {
-  na.check <- colSums(is.na(test.cleaned[(10*i+1):(10*(i+1))]))
-  print(na.check)
-}
-
-for (i in 0:4) {
-  for (j in (10*i+1):(10*(i+1))) {
-    score.summary <- table(test.cleaned[[j]])
-    print(score.summary)
-  }
-}
-
+colSums(is.na(big5.cleaned))
+colSums(big5.cleaned == 0)
+summary(big5.cleaned)
+length(unique(big5.cleaned$country))
 
 correlation <- cor(as.matrix(mutate_all(test.cleaned[1:50], as.numeric)))
 
@@ -61,6 +55,8 @@ plot(table((test.cleaned$country)))
 head(sort(table(test.cleaned$country), decreasing = TRUE))
 
 boxplot(correlation)
+
+
 
 
 
