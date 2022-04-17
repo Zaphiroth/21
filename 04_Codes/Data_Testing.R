@@ -39,7 +39,7 @@ big5.cleaned <- big5.raw %>%
   select(-ends_with('_E')) %>% 
   select(ends_with(as.character(0:9)), country) %>% 
   filter(EXT1 != 'NULL') %>% 
-  filter_all(all_vars(. !=0)) %>% 
+  # filter_all(all_vars(. !=0)) %>% 
   mutate_at(vars(ends_with(as.character(0:9))), as.numeric) %>% 
   arrange(country) %>% 
   mutate(ID = row_number())

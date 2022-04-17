@@ -6,13 +6,13 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 
-##---- setup environment variables ----
+##---- Setup environment variables ----
 options(java.parameters = "-Xmx2048m",
         stringsAsFactors = FALSE, 
         encoding = 'UTF-8')
 
 
-##---- loading the required packages ----
+##---- Loading the required packages ----
 suppressPackageStartupMessages({
   library(zip)
   library(openxlsx)
@@ -26,10 +26,12 @@ suppressPackageStartupMessages({
   library(MASS)
   library(car)
   library(data.table)
+  library(ggplot2)
   library(tidyverse)
+  library(DMwR2)
   library(lubridate)
 })
 
 
-##---- setup the directories ----
+##---- Setup the directories ----
 system("cmd.exe", input = "mkdir 01_Background 02_Inputs 03_Outputs 04_Codes 05_Internal_Review 06_Deliveries")
