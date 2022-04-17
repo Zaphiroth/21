@@ -27,6 +27,7 @@ suppressPackageStartupMessages({
   library(car)
   library(data.table)
   library(ggplot2)
+  library(patchwork)
   library(tidyverse)
   library(DMwR2)
   library(lubridate)
