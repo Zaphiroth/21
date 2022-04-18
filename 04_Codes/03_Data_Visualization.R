@@ -11,7 +11,8 @@
 item.seq <- read.xlsx('02_Inputs/1.Personality/Big5/Item.xlsx')
 
 ## frequency
-big5.count <- big5.imp[, 1:50] %>% 
+big5.count <- big5.imp %>% 
+  select(-country, -NMV, -ID) %>% 
   pivot_longer(
     cols = everything(), 
     names_to = 'Item', 
@@ -27,7 +28,7 @@ ggplot.item <- ggplot(mapping = aes(Scale, Frequency)) +
         legend.position = 'none') + 
   scale_y_continuous(
     limits = c(0, 500000), 
-    breaks = c(0, 100000, 200000, 300000, 400000, 500000), 
+    breaks = seq(0, 500000, 100000), 
     labels = c('0', '100000', '200000', '300000', '400000', '500000')
   )
 
@@ -70,4 +71,42 @@ ggsave(filename = 'AGR.png', plot = plot.agr, path = '03_Outputs',
 plot.est <- EST1 + EST2 + EST3 + EST4 + EST5 + EST6 + EST7 + EST8 + EST9 + EST10 + 
   plot_layout(nrow = 2)
 ggsave(filename = 'EST.png', plot = plot.est, path = '03_Outputs', 
+       width = 10, height = 4)
+
+
+##---- Country distribution of participants ----
+## country code
+country.code <- read_csv('02_Inputs/1.Personality/wikipedia-iso-country-codes.csv')
+
+## count country
+country.count <- big5.imp %>% 
+  select(country) %>% 
+  count(country, name = 'n') %>% 
+  mutate(country = ifelse(n >= 10000 & country != 'NONE', country, 'Others')) %>% 
+  group_by(country) %>% 
+  summarise(n = sum(n, na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  arrange(desc(n)) %>% 
+  left_join(country.code, by = c('country' = 'Alpha-2 code')) %>% 
+  select(country = `English short name lower case`, n) %>% 
+  mutate(country = ifelse(is.na(country), 'Others', country), 
+         country = factor(country, levels = country))
+
+## ggplot
+plot.country <- ggplot(country.count, aes(country, n, fill = country)) + 
+  xlab(label = NULL) + 
+  ylab(label = NULL) + 
+  labs(title = 'The Country of participants') + 
+  theme(plot.title = element_text(hjust = 0.5), 
+        legend.position = 'none') + 
+  scale_y_continuous(
+    limits = c(0, 550000), 
+    breaks = seq(0, 550000, 50000), 
+    labels = c('0', '50000', '100000', '150000', '200000', '250000', '300000', 
+               '350000', '400000', '450000', '500000', '550000')
+  ) + 
+  geom_bar(stat = 'identity') + 
+  geom_text(aes(label = n, vjust = 'bottom'))
+
+ggsave(filename = 'Country.png', plot = plot.country, path = '03_Outputs', 
        width = 10, height = 4)
