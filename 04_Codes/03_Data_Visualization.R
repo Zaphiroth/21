@@ -7,53 +7,67 @@
 
 
 ##---- Score distributions of items ----
-## question
-ques.opn <- c('OPN1', 'OPN2', 'OPN3', 'OPN4', 'OPN5', 
-              'OPN6', 'OPN7', 'OPN8', 'OPN9', 'OPN10')
-ques.csn <- c('CSN1', 'CSN2', 'CSN3', 'CSN4', 'CSN5', 
-              'CSN6', 'CSN7', 'CSN8', 'CSN9', 'CSN10')
-ques.ext <- c('EXT1', 'EXT2', 'EXT3', 'EXT4', 'EXT5', 
-              'EXT6', 'EXT7', 'EXT8', 'EXT9', 'EXT10')
-ques.agr <- c('AGR1', 'AGR2', 'AGR3', 'AGR4', 'AGR5', 
-              'AGR6', 'AGR7', 'AGR8', 'AGR9', 'AGR10')
-ques.est <- c('EST1', 'EST2', 'EST3', 'EST4', 'EST5', 
-              'EST6', 'EST7', 'EST8', 'EST9', 'EST10')
+## item list
+item.seq <- read.xlsx('02_Inputs/1.Personality/Big5/Item.xlsx')
 
-## OPN
-count.opn <- big5.imp[, ques.opn] %>% 
+## frequency
+big5.count <- big5.imp[, 1:50] %>% 
   pivot_longer(
     cols = everything(), 
-    names_to = 'Question', 
+    names_to = 'Item', 
     values_to = 'Scale'
   ) %>% 
-  count(Question, Scale, name = 'Frequency')
+  count(Item, Scale, name = 'Frequency')
 
-plot.opn <- ggplot(mapping = aes(Scale, Frequency, fill = Question)) + 
+## ggplot
+ggplot.item <- ggplot(mapping = aes(Scale, Frequency)) + 
   xlab(label = NULL) + 
   ylab(label = NULL) + 
-  theme(plot.title = element_text(hjust = 0.5), legend.position = 'none') + 
+  theme(plot.title = element_text(hjust = 0.5, size = 5), 
+        legend.position = 'none') + 
   scale_y_continuous(
     limits = c(0, 500000), 
     breaks = c(0, 100000, 200000, 300000, 400000, 500000), 
     labels = c('0', '100000', '200000', '300000', '400000', '500000')
   )
 
-hist.opn1 <- plot.opn + 
-  geom_bar(data = subset(count.opn, Question == 'OPN1'), stat = 'identity') + 
-  labs(title = 'I have')
+for (item in item.seq$Item) {
+  plot.data <- subset(big5.count, Item == item)
+  plot.title <- subset(item.seq[, 1:2], Item == item) %>% paste(collapse = ': ')
+  plot.colour <- item.seq$Colour[which(item.seq$Item == item)]
+  plot.filename <- paste0(item, '.png')
+  
+  plot.item <- ggplot.item + 
+    geom_bar(data = plot.data, stat = 'identity', fill = plot.colour) + 
+    labs(title = plot.title)
+  
+  ggsave(filename = plot.filename, plot = plot.item, path = '03_Outputs/Hist_Plot', 
+         width = 4, height = 4)
+  assign(item, plot.item)
+}
 
-hist.opn2 <- plot.opn + 
-  geom_bar(data = subset(count.opn, Question == 'OPN2'), stat = 'identity') + 
-  labs(title = 'No')
+## arranging plot
+plot.opn <- OPN1 + OPN2 + OPN3 + OPN4 + OPN5 + OPN6 + OPN7 + OPN8 + OPN9 + OPN10 + 
+  plot_layout(nrow = 2)
+ggsave(filename = 'OPN.png', plot = plot.opn, path = '03_Outputs', 
+       width = 10, height = 4)
 
-hist.opn1+hist.opn2
+plot.csn <- CSN1 + CSN2 + CSN3 + CSN4 + CSN5 + CSN6 + CSN7 + CSN8 + CSN9 + CSN10 + 
+  plot_layout(nrow = 2)
+ggsave(filename = 'CSN.png', plot = plot.csn, path = '03_Outputs', 
+       width = 10, height = 4)
 
+plot.ext <- EXT1 + EXT2 + EXT3 + EXT4 + EXT5 + EXT6 + EXT7 + EXT8 + EXT9 + EXT10 + 
+  plot_layout(nrow = 2)
+ggsave(filename = 'EXT.png', plot = plot.ext, path = '03_Outputs', 
+       width = 10, height = 4)
 
+plot.agr <- AGR1 + AGR2 + AGR3 + AGR4 + AGR5 + AGR6 + AGR7 + AGR8 + AGR9 + AGR10 + 
+  plot_layout(nrow = 2)
+ggsave(filename = 'AGR.png', plot = plot.agr, path = '03_Outputs', 
+       width = 10, height = 4)
 
-
-
-
-
-
-
-
+plot.est <- EST1 + EST2 + EST3 + EST4 + EST5 + EST6 + EST7 + EST8 + EST9 + EST10 + 
+  plot_layout(nrow = 2)
+ggsave(filename = 'EST.png', plot = plot.est, path = '03_Outputs', 
+       width = 10, height = 4)
