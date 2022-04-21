@@ -1,6 +1,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 # ProjectName:  21
-# Purpose:      Data imputation
+# Purpose:      Data Imputation
 # programmer:   Zhe Liu
 # Date:         2022-04-12
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
@@ -95,6 +95,12 @@ imp.est <- read.csv('03_Outputs/EST_imp.csv')
 
 big5.imp <- bind_cols(imp.opn, imp.csn, imp.ext, imp.agr, imp.est) %>% 
   mutate_all(round) %>% 
-  bind_cols(big5.cleaned[, 51:53])
+  bind_cols(big5.cleaned[, 51:53]) %>% 
+  select(OPN1, OPN2, OPN3, OPN4, OPN5, OPN6, OPN7, OPN8, OPN9, OPN10, 
+         CSN1, CSN2, CSN3, CSN4, CSN5, CSN6, CSN7, CSN8, CSN9, CSN10, 
+         EXT1, EXT2, EXT3, EXT4, EXT5, EXT6, EXT7, EXT8, EXT9, EXT10, 
+         AGR1, AGR2, AGR3, AGR4, AGR5, AGR6, AGR7, AGR8, AGR9, AGR10, 
+         EST1, EST2, EST3, EST4, EST5, EST6, EST7, EST8, EST9, EST10, 
+         country, ID, NMV)
 
 write.csv(big5.imp, '03_Outputs/Big5_imp.csv', row.names = FALSE)
