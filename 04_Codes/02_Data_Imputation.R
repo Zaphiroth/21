@@ -19,18 +19,14 @@
 
 ## replacing 0 with NaN
 big5.nan <- big5.cleaned[, 1:50] %>% 
-  replace((. == 0), NaN)
+  replace((. == 0), NaN) %>% 
+  mutate_all(function(x) {(x - 3) / 2})
 
 
 ##---- K nearest neighbors imputation ----
-## dimension segmentation
-big5.opn <- select(big5.nan, starts_with('OPN'))
-big5.csn <- select(big5.nan, starts_with('CSN'))
-big5.ext <- select(big5.nan, starts_with('EXT'))
-big5.agr <- select(big5.nan, starts_with('AGR'))
-big5.est <- select(big5.nan, starts_with('EST'))
-
 ## OPN imputation
+big5.opn <- select(big5.nan, starts_with('OPN'))
+
 imp.opn <- knnImputation(
   big5.opn, 
   k = 10, 
@@ -42,6 +38,8 @@ imp.opn <- knnImputation(
 write.csv(imp.opn, '03_Outputs/OPN_imp.csv', row.names = FALSE)
 
 ## CSN imputation
+big5.csn <- select(big5.nan, starts_with('CSN'))
+
 imp.csn <- knnImputation(
   big5.csn, 
   k = 10, 
@@ -53,6 +51,8 @@ imp.csn <- knnImputation(
 write.csv(imp.csn, '03_Outputs/CSN_imp.csv', row.names = FALSE)
 
 ## EXT imputation
+big5.ext <- select(big5.nan, starts_with('EXT'))
+
 imp.ext <- knnImputation(
   big5.ext, 
   k = 10, 
@@ -64,6 +64,8 @@ imp.ext <- knnImputation(
 write.csv(imp.ext, '03_Outputs/EXT_imp.csv', row.names = FALSE)
 
 ## AGR imputation
+big5.agr <- select(big5.nan, starts_with('AGR'))
+
 imp.agr <- knnImputation(
   big5.agr, 
   k = 10, 
@@ -75,6 +77,8 @@ imp.agr <- knnImputation(
 write.csv(imp.agr, '03_Outputs/AGR_imp.csv', row.names = FALSE)
 
 ## EST imputation
+big5.est <- select(big5.nan, starts_with('EST'))
+
 imp.est <- knnImputation(
   big5.est, 
   k = 10, 
@@ -94,6 +98,7 @@ imp.agr <- read.csv('03_Outputs/AGR_imp.csv')
 imp.est <- read.csv('03_Outputs/EST_imp.csv')
 
 big5.imp <- bind_cols(imp.opn, imp.csn, imp.ext, imp.agr, imp.est) %>% 
+  mutate_all(function(x) {x * 2 + 3}) %>% 
   mutate_all(round) %>% 
   bind_cols(big5.cleaned[, 51:53]) %>% 
   select(OPN1, OPN2, OPN3, OPN4, OPN5, OPN6, OPN7, OPN8, OPN9, OPN10, 

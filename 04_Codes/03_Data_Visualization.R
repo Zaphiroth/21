@@ -6,7 +6,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 
-##---- Score distributions of items ----
+##---- Scale distributions of items ----
 ## item list
 item.seq <- read.xlsx('02_Inputs/1.Personality/Big5/Item.xlsx')
 
@@ -18,10 +18,10 @@ big5.count <- big5.imp %>%
     names_to = 'Item', 
     values_to = 'Scale'
   ) %>% 
-  count(Item, Scale, name = 'Frequency')
+  count(Item, Scale, name = 'Freq')
 
 ## ggplot
-ggplot.item <- ggplot(mapping = aes(Scale, Frequency)) + 
+ggplot.item <- ggplot(mapping = aes(Scale, Freq)) + 
   xlab(label = NULL) + 
   ylab(label = NULL) + 
   theme(plot.title = element_text(hjust = 0.5, size = 5), 
@@ -35,7 +35,7 @@ ggplot.item <- ggplot(mapping = aes(Scale, Frequency)) +
 
 for (item in item.seq$Item) {
   plot.data <- subset(big5.count, Item == item)
-  plot.title <- subset(item.seq[, 1:2], Item == item) %>% paste(collapse = ': ')
+  plot.title <- subset(item.seq[, 2:3], Item == item) %>% paste(collapse = ': ')
   plot.colour <- item.seq$Colour[which(item.seq$Item == item)]
   plot.filename <- paste0(item, '.png')
   
@@ -47,6 +47,8 @@ for (item in item.seq$Item) {
          width = 4, height = 4)
   assign(item, plot.item)
 }
+
+rm(item, plot.data, plot.title, plot.colour, plot.filename, plot.item)
 
 ## arranging plot
 plot.opn <- OPN1 + OPN2 + OPN3 + OPN4 + OPN5 + OPN6 + OPN7 + OPN8 + OPN9 + OPN10 + 
@@ -73,6 +75,17 @@ plot.est <- EST1 + EST2 + EST3 + EST4 + EST5 + EST6 + EST7 + EST8 + EST9 + EST10
   plot_layout(nrow = 2)
 ggsave(filename = 'EST.png', plot = plot.est, path = '03_Outputs', 
        width = 10, height = 4)
+
+
+##---- Score distributions of dimensions
+chk <- big5.dim[, 1:5] %>% 
+  pivot_longer(cols = everything(), names_to = 'dim', values_to = 'score') %>% 
+  group_by(dim, score) %>% 
+  summarise(num = n()) %>% 
+  ungroup() %>% 
+  filter(dim == 'EST')
+
+plot(chk$score, chk$num)
 
 
 ##---- Country distribution of participants ----
@@ -154,14 +167,14 @@ ggsave(filename = 'Corrplot_Item.png', plot = corrplot.item, path = '03_Outputs'
        width = 6, height = 5)
 
 ## correlation matrix of dimensions
-score.reverse <- c('OPN2', 'OPN4', 'OPN6', 
+scale.reverse <- c('OPN2', 'OPN4', 'OPN6', 
                    'CSN2', 'CSN4', 'CSN6', 'CSN8', 
                    'EST2', 'EST4', 
                    'AGR1', 'AGR3', 'AGR5', 'AGR7', 
                    'EST2', 'EST4')
 
 big5.dim <- big5.imp %>% 
-  mutate_at(score.reverse, function(x) {6 - x}) %>% 
+  mutate_at(scale.reverse, function(x) {6 - x}) %>% 
   mutate(
     OPN = OPN1 + OPN2 + OPN3 + OPN4 + OPN5 + OPN6 + OPN7 + OPN8 + OPN9 + OPN10, 
     CSN = CSN1 + CSN2 + CSN3 + CSN4 + CSN5 + CSN6 + CSN7 + CSN8 + CSN9 + CSN10, 

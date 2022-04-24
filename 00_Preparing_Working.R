@@ -31,8 +31,11 @@ suppressPackageStartupMessages({
   library(patchwork)
   library(ClusterR)
   library(cluster)
+  library(biganalytics)
   library(tidyverse)
   library(DMwR2)
+  library(NbClust)
+  library(factoextra)
   library(lubridate)
 })
 
