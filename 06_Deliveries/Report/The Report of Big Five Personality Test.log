@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.14)  24 APR 2022 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.14)  25 APR 2022 00:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -620,45 +620,50 @@ l.346 \section{ËÅöÁ±ªÁªìÊûúÂ±ïÁ§∫}
 <Cluster1.png, id=355, 722.7pt x 144.54pt>
 File: Cluster1.png Graphic file (type png)
 <use Cluster1.png>
-Package pdftex.def Info: Cluster1.png  used on input line 375.
+Package pdftex.def Info: Cluster1.png  used on input line 379.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
 <Cluster2.png, id=356, 722.7pt x 144.54pt>
 File: Cluster2.png Graphic file (type png)
 <use Cluster2.png>
-Package pdftex.def Info: Cluster2.png  used on input line 380.
+Package pdftex.def Info: Cluster2.png  used on input line 384.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
  [14]
 <Cluster3.png, id=365, 722.7pt x 144.54pt>
 File: Cluster3.png Graphic file (type png)
 <use Cluster3.png>
-Package pdftex.def Info: Cluster3.png  used on input line 385.
+Package pdftex.def Info: Cluster3.png  used on input line 389.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
 <Cluster4.png, id=366, 722.7pt x 144.54pt>
 File: Cluster4.png Graphic file (type png)
 <use Cluster4.png>
-Package pdftex.def Info: Cluster4.png  used on input line 390.
+Package pdftex.def Info: Cluster4.png  used on input line 394.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
 <Cluster5.png, id=367, 722.7pt x 144.54pt>
 File: Cluster5.png Graphic file (type png)
 <use Cluster5.png>
-Package pdftex.def Info: Cluster5.png  used on input line 395.
+Package pdftex.def Info: Cluster5.png  used on input line 399.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
- [15 <./Cluster1.png> <./Cluster2.png> <./Cluster3.png> <./Cluster4.png>] [16 <./Cluster5.png>] [17] (The Report of Big Five Personality Test.aux)
+ [15 <./Cluster1.png> <./Cluster2.png> <./Cluster3.png> <./Cluster4.png>] [16 <./Cluster5.png>] [17] [18]
+Overfull \hbox (12.28458pt too wide) in paragraph at lines 516--518
+[]\C70/rm/m/n/10.53937/4e Œ \C70/rm/m/n/10.53937/88 h[][]\OT1/cmr/m/n/10.53937 10[][]\C70/rm/m/n/10.53937/4e - \C70/rm/m/n/10.53937/80 ˝ \C70/rm/m/n/10.53937/59 ^^_ \C70/rm/m/n/10.53937/53 — \C70/rm/m/n/10.53937/73 ∞\OT1/cmr/m/n/10.53937 16\C70/rm/m/n/10.53937/4e * \C70/rm/m/n/10.53937/7c { \C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.53937/4e é \C70/rm/m/n/10.53937/59 ' \C70/rm/m/n/10.53937/4e î ∫ \C70/rm/m/n/10.53937/68 < \C70/rm/m/n/10.53937/6d K \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/65 p \C70/rm/m/n/10.53937/63 n \C70/rm/m/n/10.53937/67 e \C70/rm/m/n/10.53937/8b Ù \C70/rm/m/n/10.53937/67 	 \C70/rm/m/n/10.53937/4e õ \C70/rm/m/n/10.53937/59 ^^Z \C70/rm/m/n/10.53937/4e Ü|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/7c {\OT1/cmr/m/n/10.53937 12\C70/rm/m/n/10.53937/54 å
+ []
+
+[19] (The Report of Big Five Personality Test.aux)
 Package rerunfilecheck Info: File `"The Report of Big Five Personality Test".out' has not changed.
-(rerunfilecheck)             Checksum: 25CF2813667FF6AEE1FF6DAF97DD8AFA;2104.
+(rerunfilecheck)             Checksum: 94F1C31E91F90F6F300472606C34D5E3;2084.
  ) 
 Here is how much of TeX's memory you used:
- 15914 strings out of 478582
- 279352 string characters out of 2845760
- 549611 words of memory out of 3000000
- 33504 multiletter control sequences out of 15000+600000
+ 16016 strings out of 478582
+ 280579 string characters out of 2845760
+ 549946 words of memory out of 3000000
+ 33601 multiletter control sequences out of 15000+600000
  519274 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,78p,778b,465s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc> <C:\Users\LZ\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi632\tcrm1000.pk><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "The Report of Big Five Personality Test.pdf" (17 pages, 1206048 bytes).
+Output written on "The Report of Big Five Personality Test.pdf" (19 pages, 1228242 bytes).
 PDF statistics:
- 798 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 812 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
  506 words of extra memory for PDF output out of 10000 (max. 10000000)
 

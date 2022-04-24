@@ -79,7 +79,6 @@ cluster.km5 <- bigkmeans(
 cluster.km5.center <- cluster.km5$centers * 20 + 30
 
 
-
 ##---- Visualizing 5-means clustering result ----
 ## Scale distributions of clusters
 cluster.km5.count <- big5.dim %>% 
@@ -120,7 +119,7 @@ for (cluster in 1:5) {
       labs(title = dimension)
     
     ggsave(filename = plot.filename, plot = plot.cluster.km5, 
-           path = '03_Outputs/Cluster_Plot', width = 4, height = 4)
+           path = '03_Outputs/Cluster5_Plot', width = 4, height = 4)
     assign(paste0('Cluster', cluster, '.', dimension), plot.cluster.km5)
   }
 }
@@ -161,6 +160,7 @@ cluster.km5.prop <- cluster.km5.count %>%
          Cum_Prop = cumsum(Freq) / sum(Freq)) %>% 
   ungroup()
 
+write.xlsx(cluster.km5.prop, '03_Outputs/Cluster_5_Distribution.xlsx')
 
 
 
