@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.14)  25 APR 2022 00:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.14)  28 APR 2022 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -517,153 +517,153 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 21.
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 29.
+(Font)              <10.53937> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 30.
  (C:\Users\LZ\AppData\Local\Programs\MiKTeX\tex/generic/ctex/zhmap\ctex-zhmap-windows.tex
 File: ctex-zhmap-windows.tex 2021/12/12 v2.5.8 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
 {C:/Users/LZ/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
 
-] [2]
+]
+Overfull \hbox (1.28172pt too wide) in paragraph at lines 67--72
+[]\C70/rm/m/n/10.53937/5e 8 \C70/rm/m/n/10.53937/75 ( \C70/rm/m/n/10.53937/76 �\OT1/cmr/m/n/10.53937 Big5\C70/rm/m/n/10.53937/4e � \C70/rm/m/n/10.53937/68 < \C70/rm/m/n/10.53937/6d K \C70/rm/m/n/10.53937/9a � \C70/rm/m/n/10.53937/67 	$\OT1/cmr/m/n/10.53937 10 \OMS/cmsy/m/n/10.53937 ^^@ \OML/cmm/m/it/10.53937 item scale$\C70/rm/m/n/10.53937/54 �$\OT1/cmr/m/n/10.53937 20 \OMS/cmsy/m/n/10.53937 ^^@ \OML/cmm/m/it/10.53937 item scale$\C70/rm/m/n/10.53937/4e $ * \C70/rm/m/n/10.53937/72 H \C70/rm/m/n/10.53937/67 , |\C70/rm/m/n/10.53937/ff ^^H|[][]$\OML/cmm/m/it/10.53937 Big \OMS/cmsy/m/n/10.53937 ^^@
+ []
+
+[2]
 pdfTeX warning (ext4): destination with the same identifier (name{section.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \section{研究目的与数据来源}
+l.88 \section{研究目的与数据来源}
                                           
 pdfTeX warning (ext4): destination with the same identifier (name{section.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 \section{数据清洗和数据预处理}
-                                              [3]
+l.102 \section{数据清洗和数据预处理}
+                                               [3] [4]
 pdfTeX warning (ext4): destination with the same identifier (name{section.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \section{不同题目的分数分布}
-                                            [4]
-<OPN.png, id=271, 722.7pt x 289.08pt>
+l.134 \section{题目分数的分布}
+                                     
+<OPN.png, id=278, 722.7pt x 289.08pt>
 File: OPN.png Graphic file (type png)
 <use OPN.png>
-Package pdftex.def Info: OPN.png  used on input line 129.
+Package pdftex.def Info: OPN.png  used on input line 145.
 (pdftex.def)             Requested size: 345.44745pt x 138.17897pt.
-<CSN.png, id=272, 722.7pt x 289.08pt>
+<CSN.png, id=279, 722.7pt x 289.08pt>
 File: CSN.png Graphic file (type png)
 <use CSN.png>
-Package pdftex.def Info: CSN.png  used on input line 134.
+Package pdftex.def Info: CSN.png  used on input line 150.
 (pdftex.def)             Requested size: 345.44745pt x 138.17897pt.
-<EXT.png, id=273, 722.7pt x 289.08pt>
+<EXT.png, id=280, 722.7pt x 289.08pt>
 File: EXT.png Graphic file (type png)
 <use EXT.png>
-Package pdftex.def Info: EXT.png  used on input line 139.
+Package pdftex.def Info: EXT.png  used on input line 155.
 (pdftex.def)             Requested size: 345.44745pt x 138.17897pt.
-<AGR.png, id=274, 722.7pt x 289.08pt>
+ [5 <./OPN.png>]
+<AGR.png, id=291, 722.7pt x 289.08pt>
 File: AGR.png Graphic file (type png)
 <use AGR.png>
-Package pdftex.def Info: AGR.png  used on input line 144.
+Package pdftex.def Info: AGR.png  used on input line 160.
 (pdftex.def)             Requested size: 345.44745pt x 138.17897pt.
- [5 <./OPN.png> <./CSN.png>]
-<EST.png, id=286, 722.7pt x 289.08pt>
+<EST.png, id=292, 722.7pt x 289.08pt>
 File: EST.png Graphic file (type png)
 <use EST.png>
-Package pdftex.def Info: EST.png  used on input line 149.
+Package pdftex.def Info: EST.png  used on input line 165.
 (pdftex.def)             Requested size: 345.44745pt x 138.17897pt.
- [6 <./EXT.png> <./AGR.png> <./EST.png>]
-Overfull \hbox (17.53052pt too wide) in alignment at lines 161--216
+ [6 <./CSN.png> <./EXT.png> <./AGR.png>]
+Overfull \hbox (17.53052pt too wide) in alignment at lines 177--232
  [] [] [] 
  []
 
-[7] [8]
+[7 <./EST.png>] [8]
 pdfTeX warning (ext4): destination with the same identifier (name{section.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.233 \section{维度和题目的相关性分析}
+l.250 \section{维度和题目的相关性分析}
                                                  
-<Corrplot_Item.png, id=310, 433.62pt x 361.35pt>
+<Corrplot_Item.png, id=318, 433.62pt x 361.35pt>
 File: Corrplot_Item.png Graphic file (type png)
 <use Corrplot_Item.png>
-Package pdftex.def Info: Corrplot_Item.png  used on input line 238.
+Package pdftex.def Info: Corrplot_Item.png  used on input line 256.
 (pdftex.def)             Requested size: 303.53192pt x 252.94327pt.
- [9 <./Corrplot_Item.png>]
-<Corrplot_Dimension.png, id=319, 433.62pt x 361.35pt>
+ [9]
+<Corrplot_Dimension.png, id=325, 433.62pt x 361.35pt>
 File: Corrplot_Dimension.png Graphic file (type png)
 <use Corrplot_Dimension.png>
-Package pdftex.def Info: Corrplot_Dimension.png  used on input line 256.
+Package pdftex.def Info: Corrplot_Dimension.png  used on input line 274.
 (pdftex.def)             Requested size: 303.53192pt x 252.94327pt.
- [10 <./Corrplot_Dimension.png>]
+ [10 <./Corrplot_Item.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{section.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.265 \section{参加者的国家分布}
+l.284 \section{测试者的国家分布}
                                         
-<Country.png, id=326, 433.62pt x 289.08pt>
+<Country.png, id=332, 433.62pt x 289.08pt>
 File: Country.png Graphic file (type png)
 <use Country.png>
-Package pdftex.def Info: Country.png  used on input line 270.
+Package pdftex.def Info: Country.png  used on input line 289.
 (pdftex.def)             Requested size: 342.55605pt x 228.37068pt.
- [11 <./Country.png (PNG copy)>]
+ [11 <./Corrplot_Dimension.png>] [12 <./Country.png (PNG copy)>]
 pdfTeX warning (ext4): destination with the same identifier (name{section.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.307 \section{聚类方法}
-                             [12]
+l.331 \section{聚类方法}
+                             [13]
 pdfTeX warning (ext4): destination with the same identifier (name{section.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.324 \section{超参数设置}
-                                [13]
+l.353 \section{设置超参数}
+                               
 pdfTeX warning (ext4): destination with the same identifier (name{section.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.346 \section{聚类结果展示}
-                                  
-<Cluster1.png, id=355, 722.7pt x 144.54pt>
+l.374 \section{聚类结果展示}
+                                   [14]
+<Cluster1.png, id=370, 722.7pt x 144.54pt>
 File: Cluster1.png Graphic file (type png)
 <use Cluster1.png>
-Package pdftex.def Info: Cluster1.png  used on input line 379.
+Package pdftex.def Info: Cluster1.png  used on input line 406.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
-<Cluster2.png, id=356, 722.7pt x 144.54pt>
+<Cluster2.png, id=371, 722.7pt x 144.54pt>
 File: Cluster2.png Graphic file (type png)
 <use Cluster2.png>
-Package pdftex.def Info: Cluster2.png  used on input line 384.
+Package pdftex.def Info: Cluster2.png  used on input line 411.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
- [14]
-<Cluster3.png, id=365, 722.7pt x 144.54pt>
+<Cluster3.png, id=372, 722.7pt x 144.54pt>
 File: Cluster3.png Graphic file (type png)
 <use Cluster3.png>
-Package pdftex.def Info: Cluster3.png  used on input line 389.
+Package pdftex.def Info: Cluster3.png  used on input line 416.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
-<Cluster4.png, id=366, 722.7pt x 144.54pt>
+ [15 <./Cluster1.png>]
+<Cluster4.png, id=380, 722.7pt x 144.54pt>
 File: Cluster4.png Graphic file (type png)
 <use Cluster4.png>
-Package pdftex.def Info: Cluster4.png  used on input line 394.
+Package pdftex.def Info: Cluster4.png  used on input line 421.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
-<Cluster5.png, id=367, 722.7pt x 144.54pt>
+<Cluster5.png, id=381, 722.7pt x 144.54pt>
 File: Cluster5.png Graphic file (type png)
 <use Cluster5.png>
-Package pdftex.def Info: Cluster5.png  used on input line 399.
+Package pdftex.def Info: Cluster5.png  used on input line 426.
 (pdftex.def)             Requested size: 345.44745pt x 69.08948pt.
- [15 <./Cluster1.png> <./Cluster2.png> <./Cluster3.png> <./Cluster4.png>] [16 <./Cluster5.png>] [17] [18]
-Overfull \hbox (12.28458pt too wide) in paragraph at lines 516--518
-[]\C70/rm/m/n/10.53937/4e � \C70/rm/m/n/10.53937/88 h[][]\OT1/cmr/m/n/10.53937 10[][]\C70/rm/m/n/10.53937/4e - \C70/rm/m/n/10.53937/80 � \C70/rm/m/n/10.53937/59 ^^_ \C70/rm/m/n/10.53937/53 � \C70/rm/m/n/10.53937/73 �\OT1/cmr/m/n/10.53937 16\C70/rm/m/n/10.53937/4e * \C70/rm/m/n/10.53937/7c { \C70/rm/m/n/10.53937/5b � \C70/rm/m/n/10.53937/4e � \C70/rm/m/n/10.53937/59 ' \C70/rm/m/n/10.53937/4e � � \C70/rm/m/n/10.53937/68 < \C70/rm/m/n/10.53937/6d K \C70/rm/m/n/10.53937/9a � \C70/rm/m/n/10.53937/76 � \C70/rm/m/n/10.53937/65 p \C70/rm/m/n/10.53937/63 n \C70/rm/m/n/10.53937/67 e \C70/rm/m/n/10.53937/8b � \C70/rm/m/n/10.53937/67 	 \C70/rm/m/n/10.53937/4e � \C70/rm/m/n/10.53937/59 ^^Z \C70/rm/m/n/10.53937/4e �|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/7c {\OT1/cmr/m/n/10.53937 12\C70/rm/m/n/10.53937/54 �
- []
-
-[19] (The Report of Big Five Personality Test.aux)
+ [16 <./Cluster2.png> <./Cluster3.png> <./Cluster4.png> <./Cluster5.png>] [17] [18] [19] [20] [21] (The Report of Big Five Personality Test.aux)
 Package rerunfilecheck Info: File `"The Report of Big Five Personality Test".out' has not changed.
-(rerunfilecheck)             Checksum: 94F1C31E91F90F6F300472606C34D5E3;2084.
+(rerunfilecheck)             Checksum: B765C9DD65752033355095FEAAF6BCC1;2153.
  ) 
 Here is how much of TeX's memory you used:
- 16016 strings out of 478582
- 280579 string characters out of 2845760
- 549946 words of memory out of 3000000
- 33601 multiletter control sequences out of 15000+600000
- 519274 words of font info for 208 fonts, out of 8000000 for 9000
+ 16150 strings out of 478582
+ 282247 string characters out of 2845760
+ 550939 words of memory out of 3000000
+ 33724 multiletter control sequences out of 15000+600000
+ 519004 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,78p,778b,465s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc> <C:\Users\LZ\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi632\tcrm1000.pk><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "The Report of Big Five Personality Test.pdf" (19 pages, 1228242 bytes).
+ 75i,9n,78p,778b,469s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc> <C:\Users\LZ\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi632\tcrm1000.pk><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Windows/Fonts/simsun.ttc><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/LZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "The Report of Big Five Personality Test.pdf" (21 pages, 1265069 bytes).
 PDF statistics:
- 812 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 833 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 518 words of extra memory for PDF output out of 10000 (max. 10000000)
 
