@@ -1,14 +1,13 @@
 
 .Rhistory
 .Rproj.user
+.RData
 
 01_Background/
 
 02_Inputs/
 
 03_Outputs/
-
-.RData
 
 05_Internal_Review/
 
